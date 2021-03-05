@@ -1,0 +1,45 @@
+.character-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.character-img{
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+}
+
+.data-list{
+    list-style: none;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+
+.data-list>li{
+    align-items: center;
+    border-top: 1px solid #adadad;
+    display: flex;
+    height: 40px;
+}
+
+.data-list>li>.label{
+    display: flex;
+    font-size: 1.3em;
+    height: auto;
+    padding: 0 10px;
+}
+
+.data-list>li>.content{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bolder;
+    height: auto;
+}
