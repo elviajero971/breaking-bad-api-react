@@ -9,11 +9,14 @@ import {FaAngleUp} from 'react-icons/fa';
 import {FaChild} from 'react-icons/fa';
 import {FaThList} from 'react-icons/fa';
 import {FaAlignCenter} from 'react-icons/fa';
-import Home from './content/home/Home';
-import Character from './content/character/Character';
-import Episode from './content/episode/Episode';
-import Quote from './content/quote/Quote';
-import CharacterDetails from './content/characterDetails/CharacterDetails';
+import Home from './components/home/Home';
+import Character from './components/character/Character';
+import Episode from './components/episode/Episode';
+import Quote from './components/quote/Quote';
+import CharacterDetails from './components/characterDetails/CharacterDetails';
+
+import View from './components/view/View';
+
 
 function App() {
 
@@ -28,7 +31,7 @@ function App() {
         >
             <SidebarHeader>
             <Menu>
-              <MenuItem onClick={()=>{(collapsed === true) ? setCollapsed(false) : setCollapsed(true)}} icon={(collapsed === true) ? <FaAngleLeft /> : <FaAngleRight />}></MenuItem>
+              <MenuItem onClick={()=>{(collapsed === true) ? setCollapsed(false) : setCollapsed(true)}} icon={(collapsed === true) ? <FaAngleRight /> : <FaAngleLeft />}></MenuItem>
               <MenuItem>Breaking Bad</MenuItem>
             </Menu>
             </SidebarHeader>
@@ -71,7 +74,6 @@ function App() {
             <Route path="/quotes">
               <Quote/>
             </Route>
-            
           </Switch>
         </div>
       </div>
