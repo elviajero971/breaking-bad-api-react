@@ -70,8 +70,7 @@ function App() {
             </Route>
             <Route path="/quotes">
               <Quote/>
-            </Route>
-            
+            </Route> 
           </Switch>
         </div>
       </div>
